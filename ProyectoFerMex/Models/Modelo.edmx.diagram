@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="350ae14fed134af2b8cd1bd315187901" Name="Diagram1">
+        <EntityTypeShape EntityType="FerMexModel.Categoria" Width="1.5" PointX="3.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.Cliente" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.dirEntrega" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.Empleado" Width="1.5" PointX="0.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.ordenCliente" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.ordenProducto" Width="1.5" PointX="8.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.Paqueteria" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FerMexModel.Producto" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <AssociationConnector Association="FerMexModel.FK__Producto__ID_CAT__2E1BDC42" ManuallyRouted="false" />
+        <AssociationConnector Association="FerMexModel.FK__dirEntreg__ID_CL__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="FerMexModel.FK__ordenClie__ID_CL__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="FerMexModel.FK__ordenClie__ID_PA__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="FerMexModel.FK__ordenProd__ID_OR__34C8D9D1" ManuallyRouted="false" />
+        <AssociationConnector Association="FerMexModel.FK__ordenProd__ID_PR__35BCFE0A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

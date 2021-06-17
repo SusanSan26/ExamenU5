@@ -1,0 +1,111 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+#imgin {
+    background-image: url('img/home/tri.jpg');
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 600px;
+    height:100%;
+    width:auto;
+    filter: brightness(85%);
+    padding-left:-15px;
+}
+
+#pini {
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 280px;
+}
+
+.content-center {
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+#aComprar{
+    position:relative;
+    display:inline-block;
+    border: 2px solid;
+    color:#ffffff;
+    text-decoration:none;
+    padding: 10px 30px;
+}
+
+#aComprar:hover{
+    color:black;
+    background-color:white;
+    border-block-color:white;
+}
+
+.contenedorportafolio {
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+
+.detallesportafolio {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+
+.detallesportafolio h2, .detallesportafolio p {
+        color: #ffffff;
+}
+
+.bg-light-grey {
+    background-color: #D8D8D8;
+}
+
+.contenedoracerca {
+    margin: 15px;
+}
+
+.recuadro {
+    padding: 50px 80px;
+    border-radius: 2px;
+    min-width: 450px;
+    min-height: 565px;
+}
+
+.recuadronegro {
+    background-color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+    color: #ffffff;
+}
+
+#textorecuadro {
+    font-size: 25px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0:
+}
+
+/* Set padding to keep content from hitting the edges*/
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column   
+
+.dl-horizontal dt {
+    white-space: normal;
+}
+  */
+
+/* Set width on the form input elements since they're 100% wide by default     */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+

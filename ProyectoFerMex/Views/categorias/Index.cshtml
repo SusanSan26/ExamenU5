@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProyectoFerMex.Models.Categoria>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutCompras.cshtml";
+}
+
+<div class="container">
+    <h2>Categorias</h2>
+    <center>
+        <img src="~/Content/img/compras/iniCat.jpg" width="1150" height="200" />
+        <br />
+        <br />
+        <br />
+    </center>
+
+
+    <table class="table" style="border-radius: 100px; color: black;">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NOMBRE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DESCRIPCION)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NOMBRE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DESCRIPCION)
+                </td>
+                <td>
+
+                    <button type="button" class="btn btn-outline-primary" style="background-color:lightblue; margin-right:40px"> @Html.ActionLink("Actualizar", "Edit", new { id = item.ID_CATEGORIA }) </button>
+                    <button type="button" class="btn btn-outline-secondary" style="background-color:lightgreen; margin-left:40px; margin-right:40px"> @Html.ActionLink("Detalles", "Details", new { id = item.ID_CATEGORIA })</button>
+                    <button type="button" class="btn btn-outline-success" style="background-color:lightcoral; margin-left:40px"> @Html.ActionLink("Eliminar", "Delete", new { id = item.ID_CATEGORIA })</button>
+
+                </td>
+            </tr>
+        }
+
+    </table>
+    <center>
+        <br />
+        <p>
+            <button type="button" class="btn btn-outline-info" style="background-color:khaki"> @Html.ActionLink("Agregar nueva categoria", "Create")</button>
+        </p>
+    </center>
+
+</div>
+
+
+
+
